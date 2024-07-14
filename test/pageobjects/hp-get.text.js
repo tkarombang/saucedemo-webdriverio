@@ -14,6 +14,9 @@ class TextProduct {
   get price() {
     return $(this.gtextLocators.price);
   }
+  get imgElement() {
+    return $(this.gtextLocators.img_element);
+  }
 
   async getHeader(text) {
     await expect(this.header).toHaveText(text);
@@ -26,6 +29,11 @@ class TextProduct {
   }
   async getDesc() {
     console.log(await this.desc.getText());
+  }
+  async getImg() {
+    const atrImg = await this.imgElement.getAttribute("src");
+    await browser.newWindow(atrImg);
+    await browser.pause(2000);
   }
 }
 
