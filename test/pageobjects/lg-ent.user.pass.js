@@ -1,12 +1,18 @@
 class UserPass {
+  constructor(getLocLoginPage) {
+    this.getLocLoginPage = getLocLoginPage;
+  }
   get username() {
-    return $('//*[@id="user-name"]');
+    return $(this.getLocLoginPage.user_elm);
   }
   get password() {
-    return $('//*[@id="password"]');
+    return $(this.getLocLoginPage.pass_elm);
   }
   get btnLogin() {
-    return $('//*[@id="login-button"]');
+    return $(this.getLocLoginPage.btnLogin_elm);
+  }
+  get errMsg() {
+    return $(this.getLocLoginPage.errLogin_elm);
   }
 
   async enter(user, pass) {
@@ -15,6 +21,15 @@ class UserPass {
     await this.btnLogin.click();
     await browser.pause(3000);
   }
+
+  async getErrMsg() {
+    const txterr = await this.errMsg.getText();
+    console.log(`PESAN ERROR: ${txterr}`);
+    //EXPLICIT
+    await txterr.waitForDisplayed({ timeout: 2000 });
+    expect(await txterr.isDisplayed()).to.be.true;
+    await browser.refresh();
+  }
 }
 
-module.exports = new UserPass();
+module.exports = UserPass;

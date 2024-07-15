@@ -33,6 +33,7 @@ class ShoppingCart {
 
   async scPage() {
     await this.cartIcon.click();
+    await browser.pause(2000);
   }
 
   async printProdDesc() {
@@ -42,6 +43,7 @@ class ShoppingCart {
     console.log("TITLE: " + title);
     console.log("EXCERPT: " + excerpt);
     console.log("PRICE: " + price);
+    await browser.pause(2000);
   }
 }
 
