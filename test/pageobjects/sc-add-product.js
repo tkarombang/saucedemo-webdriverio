@@ -3,10 +3,10 @@ class ShoppingCart {
     this.itemPro = itemPro;
   }
   get btnAdd() {
-    return $(this.itemPro.btn_add);
+    return $$(this.itemPro.btn_add);
   }
-  get sCartIcon() {
-    return $(this.itemPro.icon_cart);
+  get sCartQuantity() {
+    return $(this.itemPro.icon_quantity);
   }
 
   get cartIcon() {
@@ -14,20 +14,32 @@ class ShoppingCart {
   }
 
   get titleProd() {
-    return $(this.itemPro.title_prod);
+    return $$(this.itemPro.title_prod);
   }
 
   get excerptProd() {
-    return $(this.itemPro.excerpt_prod);
+    return $$(this.itemPro.excerpt_prod);
   }
 
   get priceProd() {
-    return $(this.itemPro.price_prod);
+    return $$(this.itemPro.price_prod);
   }
 
-  async addToCart() {
-    await this.btnAdd.click();
-    console.log("TOTAL PRODUCTS: " + (await this.sCartIcon.getText()));
+  get rmProd() {
+    return $$(this.itemPro.remove_prod);
+  }
+
+  async addToCart(item) {
+    const btnsAdd = await this.btnAdd;
+    if (item > btnsAdd.length) {
+      throw new Error("Jumlah Item Terlalu Banyak");
+    } else {
+      for (let i = 0; i < item; i++) {
+        await btnsAdd[i].click();
+      }
+    }
+
+    console.log("TOTAL PRODUCTS: " + (await this.sCartQuantity.getText()));
     await browser.pause(2000);
   }
 
@@ -37,13 +49,18 @@ class ShoppingCart {
   }
 
   async printProdDesc() {
-    const title = await this.titleProd.getText();
-    const excerpt = await this.excerptProd.getText();
-    const price = await this.priceProd.getText();
-    console.log("TITLE: " + title);
-    console.log("EXCERPT: " + excerpt);
-    console.log("PRICE: " + price);
+    const title = await this.titleProd;
+    const excerpt = await this.excerptProd;
+    const prices = await this.priceProd;
+    title.forEach((name) => console.log("TITLE: " + name.getText()));
+    excerpt.forEach((desc) => console.log("EXCERPT: " + desc.getText()));
+    prices.forEach((price) => console.log("PRICE: " + price.getText()));
     await browser.pause(2000);
+  }
+
+  async remove_btn() {
+    const rmButton = await this.rmProd;
+    rmButton.forEach((btn) => btn.click());
   }
 }
 

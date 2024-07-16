@@ -4,28 +4,25 @@ const locatorLoginPage = require("../locator/loc.loginPage");
 const scAddProduct = require("../pageobjects/sc-add-product");
 const lgEntUserPass = require("../pageobjects/lg-ent.user.pass");
 const locSCaddProduct = require("../locator/loc.scAddProduct-item");
-const locSCaddProduct1 = require("../locator/loc.scAddProduct-item1");
 const filePath = "D:/webDriverIO/saucedemo/test/testData/userSaucedemo.json";
 
 const itemPro = new scAddProduct(locSCaddProduct);
-const itemPro1 = new scAddProduct(locSCaddProduct1);
 const loginPage = new lgEntUserPass(locatorLoginPage);
 const userSauceJson = JSON.parse(fs.readFileSync(filePath));
 const username = userSauceJson[0].username;
 const password = userSauceJson[0].password;
 
-describe("Shopping Cart Feature", () => {
-  it("Should Be create the new icon shopping cart by adding the product", async () => {
+describe("As a buyer I want to be able to add a product to may shopping cart", () => {
+  before(async () => {
     await url.open();
     await loginPage.enter(username, password);
-
-    await itemPro.addToCart();
-    await itemPro1.addToCart();
+  });
+  it("Should Be create the new icon shopping cart by adding the product", async () => {
+    await itemPro.addToCart(6);
   });
 
   it("Should be displayed the following detail: Quantity, Title, Excerpt, and Price. on product card", async () => {
     await itemPro.scPage();
     await itemPro.printProdDesc();
-    await itemPro1.printProdDesc();
   });
 });

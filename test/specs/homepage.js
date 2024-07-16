@@ -13,7 +13,7 @@ const userSauceJson = JSON.parse(fs.readFileSync(filePath));
 const username = userSauceJson[0].username;
 const password = userSauceJson[0].password;
 console.log(userSauceJson[0].password);
-describe("Homepage showcasing a list of products", () => {
+describe("As a buyer, I want be able to open the homepage and see the list of offered products", () => {
   it("should be showing all the offered products by creating homepage", async () => {
     await url.open();
     await browser.pause(1000);
