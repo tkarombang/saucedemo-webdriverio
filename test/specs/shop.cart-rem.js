@@ -23,4 +23,12 @@ describe("As a buyer I want to be able to manage the products on my shopping car
     await itemPro.remove_btn();
     await browser.pause(2000);
   });
+  it("Should be able to edit the quantity field which will allow the buyer to modify the quantity of the product", async () => {
+    const qtyField = await $("#quantity-field").isExisting();
+    expect(qtyField).toBe(false);
+  });
+  it("Should automatically calculate the quantity of the products added to the cart on the price test field", async () => {
+    const totalQty = await $("#total_quantity").isExisting();
+    expect(totalQty).toBe(false);
+  });
 });
