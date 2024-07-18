@@ -22,9 +22,9 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://webdriver.io/>
-    <img alt="WebdriverIO" src="https://webdriver.io/assets/images/robot-3677788dd63849c56aa5cb3f332b12d5.svg" width="146">
-  </a>
+   <a href="https://webdriver.io/">
+        <img alt="WebdriverIO" src="https://webdriver.io/assets/images/robot-3677788dd63849c56aa5cb3f332b12d5.svg" width="146">
+    </a>
 
   <h3 align="center">SAUCEDEMO PROJECT AUTOMATION TESTING</h3>
 
@@ -65,8 +65,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-
-[![Saucedemo Screen Shot][saucedemo-screenshot]](https://saucedemo.com)
 
 SauceDemo is an e-commerce website that is currentlyin very early development stages. The MVP for this website was creating a login feature and a homepage showcasing a list of items.
 But now it has been developed with the followiing features:
@@ -109,7 +107,7 @@ Report any defect/potential defect found on the website or the PRD
 
 ### Installation
 
-_Start with download and install NodeJS from this (link)[https://nodejs.org/en]_
+_Start with download and install NodeJS from this link (https://nodejs.org/en)_
 
 WebdriverIO is an all in one framework for your web app development. It enables you to run small and lightweight component tests as well as running e2e test scenarios in the browser or on a mobile device. This guarantees that you to do the testing in an environment used by your users.
 
@@ -145,7 +143,7 @@ WebdriverIO is an all in one framework for your web app development. It enables 
 
 ## Contact
 
-Your Name - [tuangKarombang](https://x.com/tuangKarombang) - Tuang Karombang
+Your Name - [tuangKarombang](https://x.com/tuangKarombang) - X
 
 Project Link: [My Portfolio](https://github.com/tkarombang/MyPortfolio)
 
@@ -156,7 +154,6 @@ Project Link: [My Portfolio](https://github.com/tkarombang/MyPortfolio)
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/muhanaz
-[saucedemo-screenshot]: https://drive.google.com/file/d/1pRkIJAHQXTcQSW9sTyb99_kHF1Ps34hf/view?usp=sharing
 [JavaScript]: https://img.shields.io/badge/logo-javascript-blue?logo=javascript
 [js-url]: https://www.javascript.com/
 [webdriverio]: https://img.shields.io/badge/webdriver_io-orange
