@@ -50,7 +50,7 @@
 
 ## About The Project
 
-SauceDemo is an e-commerce website that is currentlyin very early development stages. The MVP for this website was creating a login feature and a homepage showcasing a list of items.
+SauceDemo is an e-commerce website that is currently in very early development stages. The MVP for this website was creating a login feature and a homepage showcasing a list of items.
 But now it has been developed with the followiing features:
 
 - Login Feature.
@@ -139,6 +139,12 @@ Project Link: [My Portfolio](https://github.com/tkarombang/MyPortfolio)
 
 <a href="https://github.com/tkarombang/saucedemo-webdriverio/tree/main/img-results">
     <img src="img-results/allureImg.png" alt="Allure-Report">
+  </a>
+
+### JUnit Reports
+
+<a href="https://github.com/tkarombang/saucedemo-webdriverio/tree/main/img-results">
+    <img src="img-results/JUnit.png" alt="junit-Report">
   </a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
