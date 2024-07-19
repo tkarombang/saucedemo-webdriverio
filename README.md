@@ -2,23 +2,6 @@
 
 <a id="readme-top"></a>
 
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -149,12 +132,20 @@ Project Link: [My Portfolio](https://github.com/tkarombang/MyPortfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## Reporting Results
+
+### Allure Reports
+
+<a href="https://github.com/tkarombang/saucedemo-webdriverio/tree/img-results">
+    <img src="img-results/allureImg.png" alt="Allure-Report" width="80" height="80">
+  </a>
+
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/muhanaz
-[JavaScript]: https://img.shields.io/badge/logo-javascript-blue?logo=javascript
+[JavaScript]: https://img.shields.io/badge/JS-javascript-blue?logo=javascript
 [js-url]: https://www.javascript.com/
 [webdriverio]: https://img.shields.io/badge/webdriver_io-orange
 [wdio-url]: https://webdriver.io/

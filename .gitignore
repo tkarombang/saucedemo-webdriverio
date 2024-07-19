@@ -1,3 +1,4 @@
 node_modules/
-allure_report/
+allure-report/
+allure-results/
 junit-reports/
