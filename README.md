@@ -42,6 +42,7 @@
     </li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#reporting">Reporting</a></li>
   </ol>
 </details>
 
@@ -132,12 +133,12 @@ Project Link: [My Portfolio](https://github.com/tkarombang/MyPortfolio)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Reporting Results
+## Reporting
 
 ### Allure Reports
 
-<a href="https://github.com/tkarombang/saucedemo-webdriverio/tree/img-results">
-    <img src="img-results/allureImg.png" alt="Allure-Report" width="80" height="80">
+<a href="https://github.com/tkarombang/saucedemo-webdriverio/tree/main/img-results">
+    <img src="img-results/allureImg.png" alt="Allure-Report" width="146" height="146">
   </a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
