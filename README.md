@@ -138,7 +138,7 @@ Project Link: [My Portfolio](https://github.com/tkarombang/MyPortfolio)
 ### Allure Reports
 
 <a href="https://github.com/tkarombang/saucedemo-webdriverio/tree/main/img-results">
-    <img src="img-results/allureImg.png" alt="Allure-Report" width="146" height="146">
+    <img src="img-results/allureImg.png" alt="Allure-Report">
   </a>
 
 <!-- MARKDOWN LINKS & IMAGES -->
